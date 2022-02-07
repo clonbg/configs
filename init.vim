@@ -1,3 +1,28 @@
+" Directorio de plugins
+call plug#begin('~/.local/share/nvim/plugged')
+
+" Aquí irán los plugins a instalar
+
+Plug 'joshdick/onedark.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-eunuch'
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'posva/vim-vue'
+
+call plug#end()
+
+" Luego de esta línea puedes agregar tus configuraciones y mappings
+
+set termguicolors  " Activa true colors en la terminal
+colorscheme onedark  " Activa tema onedark
+" No mostrar en ciertos tipos de buffers y archivos
+let g:indentLine_fileTypeExclude = ['text', 'sh', 'help', 'terminal']
+let g:indentLine_bufNameExclude = ['NERD_tree.*', 'term:.*']
+
+" A partir de aquí son las configuraciones de Nvim
+
 set title  " Muestra el nombre del archivo en la ventana de la terminal
 set number  " Muestra los números de las líneas
 set mouse=a  " Permite la integración del mouse (seleccionar texto, mover el cursor)
