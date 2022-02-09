@@ -10,6 +10,13 @@ Plug 'tpope/vim-eunuch'
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'posva/vim-vue'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'mileszs/ack.vim'
+Plug 'dense-analysis/ale'
+Plug 'ycm-core/YouCompleteMe'
+Plug 'ap/vim-css-color'
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -48,4 +55,4 @@ set spelllang=en,es  " Corregir palabras usando diccionarios en inglés y españ
 
 set termguicolors  " Activa true colors en la terminal
 set background=dark  " Fondo del tema: light o dark
-colorscheme murphy  " Nombre del tema
+
